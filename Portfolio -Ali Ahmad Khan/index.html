@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ali Ahmad Khan</title>
+    <!---This is coded by ALI not AI-->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-image: url(pfbg.jpg);
+            background-size: 100% 100vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            z-index: 1000;
+            top: 0;
+        }
+
+        .logo h1 {
+            font-size: 30px;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 5px;
+            margin-top: 0;
+            font-style: italic;
+        }
+
+        .btn {
+            padding: 10px 25px 10px 25px;
+            border-radius: 12px;
+            margin-left: 10px;
+            border: 2px solid white;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 5px;
+            background-color: transparent;
+        }
+
+        .btn1 {
+            padding: 10px 25px 10px 25px;
+            border-radius: 12px;
+            margin-left: 10px;
+            border: 2px solid white;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 45px;
+            background-image: linear-gradient(to right, #4dc9e6, #210cae);
+        }
+
+        button:hover {
+            background-image: linear-gradient(to right, #4dc9e6, #210cae);
+            border: 2px solid #4dc9e6;
+            scale: 1.1;
+        }
+
+        #home {
+            text-align: center;
+            margin-top: 210px;
+            margin-bottom: 350px;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeSlideIn 1.2s ease-out forwards;
+            background: transparent;
+        }
+
+        @keyframes fadeSlideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .first-home {
+            color: white;
+            font-size: 55px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: transparent;
+        }
+
+        .second-home {
+            font-size: 80px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-left: 20px;
+            background-image: linear-gradient(to left, rgb(3, 3, 115), #0c2ac4);
+            background-size: cover;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .content {
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            margin-top: 11px;
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-text-stroke: 1px black;
+            font-weight: 900;
+            background: transparent;
+        }
+
+        #about {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 300px;
+
+        }
+
+        #about img {
+            border-radius: 20px;
+        }
+
+        #aboutme {
+            width: 700px;
+            height: 500px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, .4);
+            backdrop-filter: blur(10px);
+
+
+        }
+
+        #about-head {
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 60px;
+            background: transparent;
+
+        }
+
+        #para {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 0px 15px 0px 15px;
+            line-height: 1.6;
+            background: transparent;
+        }
+
+        #projects h1 {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .cards {
+            display: inline-block;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .card {
+            height: 400px;
+            width: 1300px;
+            border: 1px solid rgba(255, 255, 255, .4);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin-bottom: 50px;
+            margin-left: 100px;
+            padding: 50px 30px 30px 30px;
+        }
+
+        #p1 {
+            font-size: 30px;
+            color: white;
+            text-align: left;
+        }
+
+        #p2 {
+            font-size: 23px;
+            color: white;
+            text-align: left;
+            margin-top: 25px;
+
+        }
+
+        #contact {
+            color: white;
+            width: 400px;
+            height: 400px;
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            border: 1px solid rgba(255, 255, 255, .4);
+            backdrop-filter: blur(10px);
+            margin-left: 550px;
+            margin-bottom: 100px;
+            margin-top: 200px;
+        }
+
+        #contact-div {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input {
+            padding: 20px 45px 20px 45px;
+            border-radius: 40px;
+            background-color: transparent;
+            border: 1px solid white;
+            margin-top: 20px;
+        }
+
+        input::placeholder{
+            color: black;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        #submit{
+            padding: 10px 20px 10px 20px;
+            margin-top: 30px;
+            background-image: linear-gradient(to right, #4dc9e6, #210cae);
+            border: transparent;
+        }
+
+        #submit:hover{
+            scale: 1.1;
+            color: white;
+            border: 1px solid white;
+             background-image: linear-gradient(to right, #210cae, #4dc9e6);
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>AAK</h1>
+        </div>
+        <div class="buttons">
+            <a href="#home"><button class="btn">Home</button></a>
+            <a href="#about"><button class="btn">About me</button></a>
+            <a href="#projects"><button class="btn">Projects</button></a>
+            <a href="#contact"><button class="btn">Contact</button></a>
+        </div>
+    </nav>
+
+    <div id="home">
+        <span class="first-home">Hii, I am </span><span class="second-home"> ALI AHMAD KHAN</span><br>
+        <div class="content">A B.tech 2nd Year student aspiring to be a Software Developer / Video Game Designer /
+            Startup Founder / Film Director / Writer..</div>
+    </div>
+
+    <div id="about">
+        <div id="aboutme">
+            <div id="about-head">About Me</div> <br>
+            <p id="para">My name is Ali Ahmad Khan. I am from Kanpur, I have done my schooling from Kanpur. Driven by
+                deep interest in softwares, computer technologies and being inspired by the legend himself 'Tony Stark'
+                I am currently pursuing Bachelors in Technology in Computer Science with specialization in Artificial
+                Intelligence. Beyond academics, I have a keen interest in reading comic books/novels, watching
+                movies/tv-shows or doing creative things that help me stay curious and inspired. I'm passionate about
+                building innovative projects, collaborating with others and continuously learning to grow as a developer
+                and a professional.</p>
+
+        </div>
+        <img src="senku.jpeg" alt="" height="500px" width="350px">
+    </div>
+
+    <div id="projects">
+        <h1>Projects</h1>
+        <div class="cards">
+            <div class="card">
+                <div id="p1">1) Neo Films</div>
+                <div id="p2">Description - Neo Films is a creative website built to showcase my short films, music
+                    videos and visual storytelling projects from my YouTube channel. The platform serves as a personal
+                    digital portfolio for my filmmaking journey - combining design, cinematography and editing in one
+                    place. The website features a clean and cinematic interface where visitors can explore project
+                    galleries, watch embedded videos, and read about the creative process behind each film. it's
+                    designed with a focus on minimal aesthetics, smooth animations and a storytelling-driven layout that
+                    reflects the visual identity of Neo Films.</div><br>
+                <div id="p2">Tech Stack - HTML, CSS, JavaScript(for Animation and scroll effects). You can click the
+                    button below to visit Neo FIlms website.</div>
+                <div><a href="https://neo-films.netlify.app"><button class="btn1">Visit Neo Films</button></a></div>
+            </div>
+            <div class="card">
+                <div id="p1">2) Infinity</div>
+                <div id="p2">Description - Infinity is a knowledge driven website dedicated to exploring the wonders of
+                    the universe. It features articles, insights and visual content on astronomy, space science and
+                    cosmic phenomena, designed to engage readers and inspire curiosity about the cosmos. The platform
+                    provides a clean, visually appealing interface with organized sections for blog posts, featured
+                    articles and interactive visuals. Smooth navigation and thoughtful typography ensure an enjoyable
+                    reading experience while emphasizing the vastness and beauty of space.</div><br>
+                <div id="p2">Tech Stack - HTML, CSS, JavaScript(for printing the document). You can click the button
+                    below to visit Neo FIlms website.</div>
+                <div><a href="https://infinity-blogs.netlify.app"><button class="btn1">Visit Infinity</button></a></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <div id="contact-div">Contact Me</div>
+            <input type="text" name="username" id="username"placeholder="Enter Your Name.">
+            <input type="email" name="id" id="email"placeholder="Enter Your Email id..">
+            <input type="text" name="message" id="message"placeholder="Type your message...">
+            <input type="submit" value="Submit your message" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>
